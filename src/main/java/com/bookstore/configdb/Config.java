@@ -137,15 +137,7 @@ public class Config {
 //
 //                solutionStatement.setInt(1,id);
 //                idsinNormal.add(id);
-//                solutionStatement.addBatch();
-//            }
-//            solutionStatement.executeBatch();
-//
-//        }
-//        catch(SQLException e)
-//        {
-//            e.printStackTrace();
-//        }
+
         map.put(Constants.sucess,idsinNormal);
         return map;
     }
