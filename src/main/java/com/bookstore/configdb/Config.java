@@ -136,8 +136,8 @@ public class Config {
        dsfjds;lg
        dsgkjdsl;gjk
        sdgjl;dsg
-       sdufhyid
-       sdfjhkdfd
+       dgdf
+       dshf
 //
 //                solutionStatement.setInt(1,id);
 //                idsinNormal.add(id);
