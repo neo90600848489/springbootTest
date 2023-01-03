@@ -131,8 +131,6 @@ public class Config {
         List<Integer> idsinNormal=new ArrayList<>();
 //        try {
 //            PreparedStatement solutionStatement = null;
-//            solutionStatement = connection.prepareStatement(query);
-//            for(int id:ids)
 //            {
 //
 //                solutionStatement.setInt(1,id);
