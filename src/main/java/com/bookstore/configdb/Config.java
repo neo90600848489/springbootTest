@@ -123,5 +123,31 @@ public class Config {
         map.put(Constants.sucess,idsinNormal);
         return map;
     }
+    
+    public   Map<String,List<Integer>> cdsjbfjkds(String query, Connection connection, List<Integer> ids )
+    {
+        int[] rows=new int[]{0};
+        Map<String,List<Integer>> map=new HashMap<>();
+        List<Integer> idsinNormal=new ArrayList<>();
+        try {
+            PreparedStatement solutionStatement = null;
+            solutionStatement = connection.prepareStatement(query);
+            for(int id:ids)
+            {
+
+                solutionStatement.setInt(1,id);
+                idsinNormal.add(id);
+                solutionStatement.addBatch();
+            }
+            solutionStatement.executeBatch();
+
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        map.put(Constants.sucess,idsinNormal);
+        return map;
+    }
 
 }
